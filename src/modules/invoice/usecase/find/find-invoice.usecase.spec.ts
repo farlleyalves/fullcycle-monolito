@@ -1,6 +1,6 @@
 import Id from "../../../@shared/domain/value-object/id.value-object";
 import Address from "../../domain/address.entity";
-import Product from "../../domain/product.entity";
+import InvoiceItems from "../../domain/InvoiceItems.entity";
 import FindInvoiceUseCase from "./find-invoice.usecase";
 
 const mockInvoiceInput = {
@@ -16,7 +16,7 @@ const mockInvoiceInput = {
       zipCode: "123456",
   }),
   items: [
-      new Product({
+      new InvoiceItems({
           id: new Id("1"),
           name: "Item 1",
           price: 11,
